@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <ul>
-      <li><router-link to="/">Hello页面</router-link></li>
-      <li><router-link to="/home">Home页面</router-link></li>
-    </ul>
     <router-view/>
   </div>
 </template>
@@ -16,12 +11,9 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url("./assets/style/reset.css");
+  @import url("./assets/style/common.css");
+  #app {
+    height: 100%;
+  }
 </style>
